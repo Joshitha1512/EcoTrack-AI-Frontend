@@ -1,0 +1,34 @@
+.analyze-btn {
+    display: block;
+    width: 260px;              /* fits page nicely */
+    margin: 28px auto 0;       /* centered */
+    background-color: #BFEAD6; /* your current base */
+    color: #0F5132;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  /* Hover */
+  .analyze-btn:hover {
+    background-color: #B8EAD6;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(31, 122, 85, 0.18);
+  }
+  
+  /* Disabled */
+  .analyze-btn:disabled {
+    background-color: #E6F8F1;
+    color: #7aa89a;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .analyze-btn {
+    margin-bottom: 32px; /* creates breathing room below button */
+  }
+  

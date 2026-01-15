@@ -1,0 +1,197 @@
+/* =========================
+   AUTH PAGE — LIGHT ECO (DARKER)
+   ========================= */
+
+   .auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background: radial-gradient(
+      circle at top,
+      #edf6f1,
+      #e6f1eb 60%,
+      #deede5
+    );
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #173628;
+  }
+  
+  /* Header */
+  .auth-header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  
+  .auth-logo {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #34d399, #2fbf88);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 14px;
+    color: white;
+  }
+  
+  .auth-header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    color: #173628;
+  }
+  
+  .auth-header p {
+    font-size: 14px;
+    color: #4f7f69;
+  }
+  
+  /* Card */
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+  
+    background: #f6fbf8;
+    border-radius: 18px;
+  
+    border: 1px solid #d3ebe0;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Toggle container */
+.auth-toggle {
+  position: relative;
+  display: flex;
+  background: #e3f2ea; /* slightly darker mint */
+  border-radius: 14px;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+
+/* Toggle buttons */
+.auth-toggle button {
+  flex: 1;
+  z-index: 1;
+  padding: 12px 0;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3b7a63; /* inactive text */
+  transition: color 0.2s ease;
+}
+
+/* Slider */
+.auth-toggle .slider {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(50% - 6px);
+  height: calc(100% - 12px);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+/* Slider position */
+.auth-toggle.signup .slider {
+  transform: translateX(100%);
+}
+
+/* ACTIVE TEXT STATES */
+.auth-toggle.signin button:first-child {
+  color: #1f3d2b; /* dark green */
+}
+
+  
+  /* Inputs */
+  .auth-card input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 8px 0 18px;
+  
+    background: #eef6f2;
+    border: 1px solid #c6e3d6;
+    border-radius: 12px;
+  
+    font-size: 15px;
+    color: #173628;
+  
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .auth-card input::placeholder {
+    color: #7ea997;
+  }
+  
+  .auth-card input:focus {
+    outline: none;
+    border-color: #34d399;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
+  }
+  
+  /* Password */
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    padding-right: 46px;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #4f7f69;
+  }
+  
+  .password-toggle:hover {
+    color: #34d399;
+  }
+  
+  /* Button */
+  .auth-card > button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+  
+    border: none;
+    border-radius: 14px;
+  
+    background: linear-gradient(135deg, #34d399, #2fbf88);
+    color: #ffffff;
+  
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .auth-card > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(52, 211, 153, 0.4);
+  }
+  
+  .auth-card > button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Footer */
+  .auth-footer {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #5f8f77;
+  }
+  
